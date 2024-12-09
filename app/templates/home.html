@@ -3,7 +3,7 @@
 {% block content %}
 <div>
     <h1>List of Posts</h1>
-    <table id="tbl">
+    <table id="tbl" style="font-size: 28px;">
       <th>Title</th><th>Content</th>
       {% for p in page_obj %}
         <tr>
@@ -28,6 +28,6 @@
               <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
           {% endif %}
       </span>
-  </div>
+    </div>
 </div>
 {% endblock content %}
